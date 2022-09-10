@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%; /* pegando 100% da tela */
+    margin: 0 auto; /* Alinhar na direita da página */
+    box-sizing: border-box;
+}
+body{
+    background-color: #0d0d0d;
+    width: 100%;
+    height: 100vh; /* itens ficam no meio da página */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; /* Colocar um item embaixo do outro */
+
+}
+.logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+    margin: 14px 0;
+}
+.container-input{
+    max-width: 480px; /*deixou os elemtnos menores*/
+    margin: 14px 0;
+}
+.container-input span{
+    color: white;
+    font-size: 22px;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+.button-cta{
+    height: 50px; /*altura do botão*/
+    background-color: #d95032;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer; /*aparecer a mãozinha na hora de clicar no botão*/
+    margin-top: 30px; /*desgrudar os itens*/
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom:  8px;
+}
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #313131;
+    transition: transfrom 0.5s;
+    font-size: 20px;
+}
+.password:hover{
+    transform: scale(1.05);
+}
+.tooltip{
+    color: #fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden; /*Faz o elemento sumir*/
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password.hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    
+}
